@@ -53,8 +53,8 @@ def proc_data_prep():
     #892 teardrop_train.csv
     #45928 malicious
 
-    train_normal_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/train_normal.csv',header=None)
-    train_dos_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/train_dos.csv',header=None)
+    train_normal_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/train_normal.csv',header=None)
+    train_dos_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/train_dos.csv',header=None)
     train_probe_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/train_probe.csv',header=None)
     train_u2r_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/train_u2r.csv',header=None)
     train_r2l_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/train_r2l.csv',header=None)
