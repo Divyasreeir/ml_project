@@ -55,15 +55,15 @@ def proc_data_prep():
 
     train_normal_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/train_normal.csv',header=None)
     train_dos_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/train_dos.csv',header=None)
-    train_probe_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/train_probe.csv',header=None)
-    train_u2r_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/train_u2r.csv',header=None)
-    train_r2l_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/train_r2l.csv',header=None)
+    train_probe_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/train_probe.csv',header=None)
+    train_u2r_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/train_u2r.csv',header=None)
+    train_r2l_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/train_r2l.csv',header=None)
 
-    dev_normal_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/dev_normal.csv',header=None)
-    dev_dos_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/dev_dos.csv',header=None)
-    dev_probe_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/dev_probe.csv',header=None)
-    dev_u2r_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/dev_u2r.csv',header=None)
-    dev_r2l_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/kddcup99-cnn/processed_data/dev_r2l.csv',header=None)
+    dev_normal_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/dev_normal.csv',header=None)
+    dev_dos_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/dev_dos.csv',header=None)
+    dev_probe_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/dev_probe.csv',header=None)
+    dev_u2r_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/dev_u2r.csv',header=None)
+    dev_r2l_data = pd.read_csv('/mnt/matylda6/project_evo/dan/kddcup99-cnn/processed_data/dev_r2l.csv',header=None)
 
     #train_src_data = pd.concat([train_normal_data, train_dos_data, train_r2l_data, train_probe_data])
     train_src_data = pd.concat([train_normal_data, train_dos_data, train_probe_data])
@@ -113,12 +113,12 @@ def data_prep():
     #892 teardrop_train.csv
     #45928 malicious
 
-    train_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/datasets/KDD/KDDTrain_4l+.txt',header=None)
-    #train_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/datasets/KDD/KDDTrain_2l.csv',header=None)
+    train_data = pd.read_csv('/mnt/matylda6/project_evo/dan/datasets/KDD/KDDTrain_4l+.txt',header=None)
+    #train_data = pd.read_csv('/mnt/matylda6/project_evo/dan/datasets/KDD/KDDTrain_2l.csv',header=None)
     tlen = len(train_data)
-    #dev_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/datasets/KDD/KDDTest_2l.csv',header=None)
-    #dev_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/datasets/KDD/KDDTest_4l_filt+.txt',header=None)
-    dev_data = pd.read_csv('/mnt/matylda6/baskar/project_evo/dan/datasets/KDD/KDDTest_4l+.txt',header=None)
+    #dev_data = pd.read_csv('/mnt/matylda6/project_evo/dan/datasets/KDD/KDDTest_2l.csv',header=None)
+    #dev_data = pd.read_csv('/mnt/matylda6/project_evo/dan/datasets/KDD/KDDTest_4l_filt+.txt',header=None)
+    dev_data = pd.read_csv('/mnt/matylda6/project_evo/dan/datasets/KDD/KDDTest_4l+.txt',header=None)
     dlen = len(dev_data)
 
     data = pd.concat([train_data, dev_data])
